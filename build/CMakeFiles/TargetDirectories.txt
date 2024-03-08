@@ -1,0 +1,3 @@
+/home/szuszu/github/game-of-life/build/CMakeFiles/GameOfLife.dir
+/home/szuszu/github/game-of-life/build/CMakeFiles/edit_cache.dir
+/home/szuszu/github/game-of-life/build/CMakeFiles/rebuild_cache.dir
