@@ -13,18 +13,18 @@ const int gridCountY = 50;
 const int gridCellSize = 20;
 
 class GameOfLife{
-    private:
-        void randomPopulation();
+  private:
+    void randomPopulation();
 
-    public:
-        void init();
-        std::vector<std::vector<int>> update();
-        void swapArrays();
-        bool isAlive(
-            int x, 
-            int y, 
-            std::vector<std::vector<int>> arr 
-        );
+  public:
+    void init();
+    std::vector<std::vector<int>> update();
+    void swapArrays();
+    bool isAlive(
+      int x, 
+      int y, 
+      std::vector<std::vector<int>> arr 
+    );
 };
 
 #endif
