@@ -62,7 +62,7 @@ bool GameOfLife::isAlive(int x, int y, std::vector<std::vector<int>> arr) {
   //  checking bottom left
   if (y < (gridCountY - 1) && x > 0 && arr[x-1][y+1] == 1) { alive++; }
   //  checking bottom right
-  if (y < (gridCountY - 1) && x < (gridCountX - 1) && arr[x+1][y+1] == 1) 
+  if (y < (gridCountY - 1) && x < (gridCountX - 1) && arr[x+1][y+1] == 1) { alive++; }
 
 
   if (arr[x][y] == 1 && alive < 2) { return false; } 
