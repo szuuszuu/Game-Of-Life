@@ -1,10 +1,9 @@
+#include "GOL.h"
+
 #include <SDL2/SDL.h>
 #include <iostream>
 #include <vector>
-#include <cstdlib>
-#include <unistd.h>
 
-#include "GOL.h"
 
 class MainComponent{
     private:
@@ -16,17 +15,12 @@ class MainComponent{
         int windowSizeY;
 
         void init();
-        void drawGridLines();
-        void drawCells(std::vector<std::vector<int>> arr);
         void clearRenderer();
         void updateRenderer();
+        void drawCells(std::vector<std::vector<int>> arr);
+        void drawGridLines();
         ~MainComponent();
 };
-
-MainComponent::~MainComponent(){\
-    SDL_DestroyRenderer(renderer);
-    SDL_DestroyWindow(window);
-}
 
 void MainComponent::init(){
     SDL_Init(SDL_INIT_EVERYTHING);       
@@ -41,15 +35,12 @@ void MainComponent::init(){
     SDL_RenderClear(renderer);
 }
 
-void MainComponent::drawGridLines(){
-    SDL_SetRenderDrawColor(renderer, 44, 44, 44, 255);
+void MainComponent::clearRenderer(){
+    SDL_RenderClear(renderer);
+}
 
-    for(int x = 0; x < 1 + gridCountX * gridCellSize; x += gridCellSize){
-        SDL_RenderDrawLine(renderer, x, 0, x, windowSizeY);
-    }
-    for(int y = 0; y < 1 + gridCountY * gridCellSize; y += gridCellSize){
-        SDL_RenderDrawLine(renderer, 0, y, windowSizeX, y);
-    }
+void MainComponent::updateRenderer(){
+    SDL_RenderPresent(renderer);
 }
 
 void MainComponent::drawCells(std::vector<std::vector<int>> arr){
@@ -74,13 +65,22 @@ void MainComponent::drawCells(std::vector<std::vector<int>> arr){
     }
 }
 
-void MainComponent::clearRenderer(){
-    SDL_RenderClear(renderer);
+void MainComponent::drawGridLines(){
+    SDL_SetRenderDrawColor(renderer, 44, 44, 44, 255);
+
+    for(int x = 0; x < 1 + gridCountX * gridCellSize; x += gridCellSize){
+        SDL_RenderDrawLine(renderer, x, 0, x, windowSizeY);
+    }
+    for(int y = 0; y < 1 + gridCountY * gridCellSize; y += gridCellSize){
+        SDL_RenderDrawLine(renderer, 0, y, windowSizeX, y);
+    }
 }
 
-void MainComponent::updateRenderer(){
-    SDL_RenderPresent(renderer);
+MainComponent::~MainComponent(){
+    SDL_DestroyRenderer(renderer);
+    SDL_DestroyWindow(window);
 }
+
 
 int main(int argc, char *argv[])
 {
@@ -104,7 +104,7 @@ int main(int argc, char *argv[])
             }
         }
 
-        usleep(100000);
+        SDL_Delay(100);
 
         out = gol.update();
         
