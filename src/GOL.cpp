@@ -69,4 +69,3 @@ bool GameOfLife::isAlive(int x, int y, std::vector<std::vector<int>> arr){
 
     return false;
 }
-
