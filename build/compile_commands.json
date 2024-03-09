@@ -1,7 +1,47 @@
 [
 {
-  "directory": "/home/szuszu/github/game-of-life/build",
-  "command": "/usr/bin/g++   -g -o CMakeFiles/GameOfLife.dir/src/main.cpp.o -c /home/szuszu/github/game-of-life/src/main.cpp",
-  "file": "/home/szuszu/github/game-of-life/src/main.cpp"
+  "directory": "/home/szuszu/github/game-of-life/Game-Of-Life/build",
+  "command": "/usr/bin/g++  -I/home/szuszu/github/game-of-life/Game-Of-Life/include -g -o CMakeFiles/GameOfLife.dir/src/menutest.cpp.o -c /home/szuszu/github/game-of-life/Game-Of-Life/src/menutest.cpp",
+  "file": "/home/szuszu/github/game-of-life/Game-Of-Life/src/menutest.cpp"
+},
+{
+  "directory": "/home/szuszu/github/game-of-life/Game-Of-Life/build",
+  "command": "/usr/bin/g++  -I/home/szuszu/github/game-of-life/Game-Of-Life/include -g -o CMakeFiles/GameOfLife.dir/src/GOL.cpp.o -c /home/szuszu/github/game-of-life/Game-Of-Life/src/GOL.cpp",
+  "file": "/home/szuszu/github/game-of-life/Game-Of-Life/src/GOL.cpp"
+},
+{
+  "directory": "/home/szuszu/github/game-of-life/Game-Of-Life/build",
+  "command": "/usr/bin/g++  -I/home/szuszu/github/game-of-life/Game-Of-Life/include -g -o CMakeFiles/GameOfLife.dir/imgui/imgui_demo.cpp.o -c /home/szuszu/github/game-of-life/Game-Of-Life/imgui/imgui_demo.cpp",
+  "file": "/home/szuszu/github/game-of-life/Game-Of-Life/imgui/imgui_demo.cpp"
+},
+{
+  "directory": "/home/szuszu/github/game-of-life/Game-Of-Life/build",
+  "command": "/usr/bin/g++  -I/home/szuszu/github/game-of-life/Game-Of-Life/include -g -o CMakeFiles/GameOfLife.dir/imgui/imgui_draw.cpp.o -c /home/szuszu/github/game-of-life/Game-Of-Life/imgui/imgui_draw.cpp",
+  "file": "/home/szuszu/github/game-of-life/Game-Of-Life/imgui/imgui_draw.cpp"
+},
+{
+  "directory": "/home/szuszu/github/game-of-life/Game-Of-Life/build",
+  "command": "/usr/bin/g++  -I/home/szuszu/github/game-of-life/Game-Of-Life/include -g -o CMakeFiles/GameOfLife.dir/imgui/imgui_impl_sdl2.cpp.o -c /home/szuszu/github/game-of-life/Game-Of-Life/imgui/imgui_impl_sdl2.cpp",
+  "file": "/home/szuszu/github/game-of-life/Game-Of-Life/imgui/imgui_impl_sdl2.cpp"
+},
+{
+  "directory": "/home/szuszu/github/game-of-life/Game-Of-Life/build",
+  "command": "/usr/bin/g++  -I/home/szuszu/github/game-of-life/Game-Of-Life/include -g -o CMakeFiles/GameOfLife.dir/imgui/imgui_impl_sdlrenderer2.cpp.o -c /home/szuszu/github/game-of-life/Game-Of-Life/imgui/imgui_impl_sdlrenderer2.cpp",
+  "file": "/home/szuszu/github/game-of-life/Game-Of-Life/imgui/imgui_impl_sdlrenderer2.cpp"
+},
+{
+  "directory": "/home/szuszu/github/game-of-life/Game-Of-Life/build",
+  "command": "/usr/bin/g++  -I/home/szuszu/github/game-of-life/Game-Of-Life/include -g -o CMakeFiles/GameOfLife.dir/imgui/imgui_tables.cpp.o -c /home/szuszu/github/game-of-life/Game-Of-Life/imgui/imgui_tables.cpp",
+  "file": "/home/szuszu/github/game-of-life/Game-Of-Life/imgui/imgui_tables.cpp"
+},
+{
+  "directory": "/home/szuszu/github/game-of-life/Game-Of-Life/build",
+  "command": "/usr/bin/g++  -I/home/szuszu/github/game-of-life/Game-Of-Life/include -g -o CMakeFiles/GameOfLife.dir/imgui/imgui_widgets.cpp.o -c /home/szuszu/github/game-of-life/Game-Of-Life/imgui/imgui_widgets.cpp",
+  "file": "/home/szuszu/github/game-of-life/Game-Of-Life/imgui/imgui_widgets.cpp"
+},
+{
+  "directory": "/home/szuszu/github/game-of-life/Game-Of-Life/build",
+  "command": "/usr/bin/g++  -I/home/szuszu/github/game-of-life/Game-Of-Life/include -g -o CMakeFiles/GameOfLife.dir/imgui/imgui.cpp.o -c /home/szuszu/github/game-of-life/Game-Of-Life/imgui/imgui.cpp",
+  "file": "/home/szuszu/github/game-of-life/Game-Of-Life/imgui/imgui.cpp"
 }
 ]

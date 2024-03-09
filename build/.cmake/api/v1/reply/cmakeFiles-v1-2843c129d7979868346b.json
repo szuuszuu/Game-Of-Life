@@ -125,8 +125,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "/home/szuszu/github/game-of-life/build",
-		"source" : "/home/szuszu/github/game-of-life"
+		"build" : "/home/szuszu/github/game-of-life/Game-Of-Life/build",
+		"source" : "/home/szuszu/github/game-of-life/Game-Of-Life"
 	},
 	"version" : 
 	{

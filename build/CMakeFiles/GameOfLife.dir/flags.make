@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/g++
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/home/szuszu/github/game-of-life/Game-Of-Life/include
 
 CXX_FLAGS = -g
 
