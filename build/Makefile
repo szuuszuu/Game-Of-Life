@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/szuszu/github/game-of-life
+CMAKE_SOURCE_DIR = /home/szuszu/github/game-of-life/Game-Of-Life
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/szuszu/github/game-of-life/build
+CMAKE_BINARY_DIR = /home/szuszu/github/game-of-life/Game-Of-Life/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/szuszu/github/game-of-life/build/CMakeFiles /home/szuszu/github/game-of-life/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/szuszu/github/game-of-life/Game-Of-Life/build/CMakeFiles /home/szuszu/github/game-of-life/Game-Of-Life/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/szuszu/github/game-of-life/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/szuszu/github/game-of-life/Game-Of-Life/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -129,29 +129,221 @@ GameOfLife/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameOfLife.dir/build.make CMakeFiles/GameOfLife.dir/build
 .PHONY : GameOfLife/fast
 
-src/main.o: src/main.cpp.o
-.PHONY : src/main.o
+imgui/imgui.o: imgui/imgui.cpp.o
+.PHONY : imgui/imgui.o
 
 # target to build an object file
-src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameOfLife.dir/build.make CMakeFiles/GameOfLife.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
+imgui/imgui.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameOfLife.dir/build.make CMakeFiles/GameOfLife.dir/imgui/imgui.cpp.o
+.PHONY : imgui/imgui.cpp.o
 
-src/main.i: src/main.cpp.i
-.PHONY : src/main.i
+imgui/imgui.i: imgui/imgui.cpp.i
+.PHONY : imgui/imgui.i
 
 # target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameOfLife.dir/build.make CMakeFiles/GameOfLife.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
+imgui/imgui.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameOfLife.dir/build.make CMakeFiles/GameOfLife.dir/imgui/imgui.cpp.i
+.PHONY : imgui/imgui.cpp.i
 
-src/main.s: src/main.cpp.s
-.PHONY : src/main.s
+imgui/imgui.s: imgui/imgui.cpp.s
+.PHONY : imgui/imgui.s
 
 # target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameOfLife.dir/build.make CMakeFiles/GameOfLife.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
+imgui/imgui.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameOfLife.dir/build.make CMakeFiles/GameOfLife.dir/imgui/imgui.cpp.s
+.PHONY : imgui/imgui.cpp.s
+
+imgui/imgui_demo.o: imgui/imgui_demo.cpp.o
+.PHONY : imgui/imgui_demo.o
+
+# target to build an object file
+imgui/imgui_demo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameOfLife.dir/build.make CMakeFiles/GameOfLife.dir/imgui/imgui_demo.cpp.o
+.PHONY : imgui/imgui_demo.cpp.o
+
+imgui/imgui_demo.i: imgui/imgui_demo.cpp.i
+.PHONY : imgui/imgui_demo.i
+
+# target to preprocess a source file
+imgui/imgui_demo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameOfLife.dir/build.make CMakeFiles/GameOfLife.dir/imgui/imgui_demo.cpp.i
+.PHONY : imgui/imgui_demo.cpp.i
+
+imgui/imgui_demo.s: imgui/imgui_demo.cpp.s
+.PHONY : imgui/imgui_demo.s
+
+# target to generate assembly for a file
+imgui/imgui_demo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameOfLife.dir/build.make CMakeFiles/GameOfLife.dir/imgui/imgui_demo.cpp.s
+.PHONY : imgui/imgui_demo.cpp.s
+
+imgui/imgui_draw.o: imgui/imgui_draw.cpp.o
+.PHONY : imgui/imgui_draw.o
+
+# target to build an object file
+imgui/imgui_draw.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameOfLife.dir/build.make CMakeFiles/GameOfLife.dir/imgui/imgui_draw.cpp.o
+.PHONY : imgui/imgui_draw.cpp.o
+
+imgui/imgui_draw.i: imgui/imgui_draw.cpp.i
+.PHONY : imgui/imgui_draw.i
+
+# target to preprocess a source file
+imgui/imgui_draw.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameOfLife.dir/build.make CMakeFiles/GameOfLife.dir/imgui/imgui_draw.cpp.i
+.PHONY : imgui/imgui_draw.cpp.i
+
+imgui/imgui_draw.s: imgui/imgui_draw.cpp.s
+.PHONY : imgui/imgui_draw.s
+
+# target to generate assembly for a file
+imgui/imgui_draw.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameOfLife.dir/build.make CMakeFiles/GameOfLife.dir/imgui/imgui_draw.cpp.s
+.PHONY : imgui/imgui_draw.cpp.s
+
+imgui/imgui_impl_sdl2.o: imgui/imgui_impl_sdl2.cpp.o
+.PHONY : imgui/imgui_impl_sdl2.o
+
+# target to build an object file
+imgui/imgui_impl_sdl2.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameOfLife.dir/build.make CMakeFiles/GameOfLife.dir/imgui/imgui_impl_sdl2.cpp.o
+.PHONY : imgui/imgui_impl_sdl2.cpp.o
+
+imgui/imgui_impl_sdl2.i: imgui/imgui_impl_sdl2.cpp.i
+.PHONY : imgui/imgui_impl_sdl2.i
+
+# target to preprocess a source file
+imgui/imgui_impl_sdl2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameOfLife.dir/build.make CMakeFiles/GameOfLife.dir/imgui/imgui_impl_sdl2.cpp.i
+.PHONY : imgui/imgui_impl_sdl2.cpp.i
+
+imgui/imgui_impl_sdl2.s: imgui/imgui_impl_sdl2.cpp.s
+.PHONY : imgui/imgui_impl_sdl2.s
+
+# target to generate assembly for a file
+imgui/imgui_impl_sdl2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameOfLife.dir/build.make CMakeFiles/GameOfLife.dir/imgui/imgui_impl_sdl2.cpp.s
+.PHONY : imgui/imgui_impl_sdl2.cpp.s
+
+imgui/imgui_impl_sdlrenderer2.o: imgui/imgui_impl_sdlrenderer2.cpp.o
+.PHONY : imgui/imgui_impl_sdlrenderer2.o
+
+# target to build an object file
+imgui/imgui_impl_sdlrenderer2.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameOfLife.dir/build.make CMakeFiles/GameOfLife.dir/imgui/imgui_impl_sdlrenderer2.cpp.o
+.PHONY : imgui/imgui_impl_sdlrenderer2.cpp.o
+
+imgui/imgui_impl_sdlrenderer2.i: imgui/imgui_impl_sdlrenderer2.cpp.i
+.PHONY : imgui/imgui_impl_sdlrenderer2.i
+
+# target to preprocess a source file
+imgui/imgui_impl_sdlrenderer2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameOfLife.dir/build.make CMakeFiles/GameOfLife.dir/imgui/imgui_impl_sdlrenderer2.cpp.i
+.PHONY : imgui/imgui_impl_sdlrenderer2.cpp.i
+
+imgui/imgui_impl_sdlrenderer2.s: imgui/imgui_impl_sdlrenderer2.cpp.s
+.PHONY : imgui/imgui_impl_sdlrenderer2.s
+
+# target to generate assembly for a file
+imgui/imgui_impl_sdlrenderer2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameOfLife.dir/build.make CMakeFiles/GameOfLife.dir/imgui/imgui_impl_sdlrenderer2.cpp.s
+.PHONY : imgui/imgui_impl_sdlrenderer2.cpp.s
+
+imgui/imgui_tables.o: imgui/imgui_tables.cpp.o
+.PHONY : imgui/imgui_tables.o
+
+# target to build an object file
+imgui/imgui_tables.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameOfLife.dir/build.make CMakeFiles/GameOfLife.dir/imgui/imgui_tables.cpp.o
+.PHONY : imgui/imgui_tables.cpp.o
+
+imgui/imgui_tables.i: imgui/imgui_tables.cpp.i
+.PHONY : imgui/imgui_tables.i
+
+# target to preprocess a source file
+imgui/imgui_tables.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameOfLife.dir/build.make CMakeFiles/GameOfLife.dir/imgui/imgui_tables.cpp.i
+.PHONY : imgui/imgui_tables.cpp.i
+
+imgui/imgui_tables.s: imgui/imgui_tables.cpp.s
+.PHONY : imgui/imgui_tables.s
+
+# target to generate assembly for a file
+imgui/imgui_tables.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameOfLife.dir/build.make CMakeFiles/GameOfLife.dir/imgui/imgui_tables.cpp.s
+.PHONY : imgui/imgui_tables.cpp.s
+
+imgui/imgui_widgets.o: imgui/imgui_widgets.cpp.o
+.PHONY : imgui/imgui_widgets.o
+
+# target to build an object file
+imgui/imgui_widgets.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameOfLife.dir/build.make CMakeFiles/GameOfLife.dir/imgui/imgui_widgets.cpp.o
+.PHONY : imgui/imgui_widgets.cpp.o
+
+imgui/imgui_widgets.i: imgui/imgui_widgets.cpp.i
+.PHONY : imgui/imgui_widgets.i
+
+# target to preprocess a source file
+imgui/imgui_widgets.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameOfLife.dir/build.make CMakeFiles/GameOfLife.dir/imgui/imgui_widgets.cpp.i
+.PHONY : imgui/imgui_widgets.cpp.i
+
+imgui/imgui_widgets.s: imgui/imgui_widgets.cpp.s
+.PHONY : imgui/imgui_widgets.s
+
+# target to generate assembly for a file
+imgui/imgui_widgets.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameOfLife.dir/build.make CMakeFiles/GameOfLife.dir/imgui/imgui_widgets.cpp.s
+.PHONY : imgui/imgui_widgets.cpp.s
+
+src/GOL.o: src/GOL.cpp.o
+.PHONY : src/GOL.o
+
+# target to build an object file
+src/GOL.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameOfLife.dir/build.make CMakeFiles/GameOfLife.dir/src/GOL.cpp.o
+.PHONY : src/GOL.cpp.o
+
+src/GOL.i: src/GOL.cpp.i
+.PHONY : src/GOL.i
+
+# target to preprocess a source file
+src/GOL.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameOfLife.dir/build.make CMakeFiles/GameOfLife.dir/src/GOL.cpp.i
+.PHONY : src/GOL.cpp.i
+
+src/GOL.s: src/GOL.cpp.s
+.PHONY : src/GOL.s
+
+# target to generate assembly for a file
+src/GOL.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameOfLife.dir/build.make CMakeFiles/GameOfLife.dir/src/GOL.cpp.s
+.PHONY : src/GOL.cpp.s
+
+src/menutest.o: src/menutest.cpp.o
+.PHONY : src/menutest.o
+
+# target to build an object file
+src/menutest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameOfLife.dir/build.make CMakeFiles/GameOfLife.dir/src/menutest.cpp.o
+.PHONY : src/menutest.cpp.o
+
+src/menutest.i: src/menutest.cpp.i
+.PHONY : src/menutest.i
+
+# target to preprocess a source file
+src/menutest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameOfLife.dir/build.make CMakeFiles/GameOfLife.dir/src/menutest.cpp.i
+.PHONY : src/menutest.cpp.i
+
+src/menutest.s: src/menutest.cpp.s
+.PHONY : src/menutest.s
+
+# target to generate assembly for a file
+src/menutest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameOfLife.dir/build.make CMakeFiles/GameOfLife.dir/src/menutest.cpp.s
+.PHONY : src/menutest.cpp.s
 
 # Help Target
 help:
@@ -162,9 +354,33 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... GameOfLife"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
+	@echo "... imgui/imgui.o"
+	@echo "... imgui/imgui.i"
+	@echo "... imgui/imgui.s"
+	@echo "... imgui/imgui_demo.o"
+	@echo "... imgui/imgui_demo.i"
+	@echo "... imgui/imgui_demo.s"
+	@echo "... imgui/imgui_draw.o"
+	@echo "... imgui/imgui_draw.i"
+	@echo "... imgui/imgui_draw.s"
+	@echo "... imgui/imgui_impl_sdl2.o"
+	@echo "... imgui/imgui_impl_sdl2.i"
+	@echo "... imgui/imgui_impl_sdl2.s"
+	@echo "... imgui/imgui_impl_sdlrenderer2.o"
+	@echo "... imgui/imgui_impl_sdlrenderer2.i"
+	@echo "... imgui/imgui_impl_sdlrenderer2.s"
+	@echo "... imgui/imgui_tables.o"
+	@echo "... imgui/imgui_tables.i"
+	@echo "... imgui/imgui_tables.s"
+	@echo "... imgui/imgui_widgets.o"
+	@echo "... imgui/imgui_widgets.i"
+	@echo "... imgui/imgui_widgets.s"
+	@echo "... src/GOL.o"
+	@echo "... src/GOL.i"
+	@echo "... src/GOL.s"
+	@echo "... src/menutest.o"
+	@echo "... src/menutest.i"
+	@echo "... src/menutest.s"
 .PHONY : help
 
 
